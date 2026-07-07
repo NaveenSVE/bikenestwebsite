@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse used motorcycles and scooters listed by real owners on Bikenest.">
+  <title>Browse Used Bikes — Bikenest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/bikenestlogo.jpeg" type="image/jpeg">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="index.html" class="logo" aria-label="Bikenest home">
+        <img src="images/bikenestlogo.jpeg" alt="" class="logo-img">
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul id="nav-menu" class="nav-links">
+        <li><a href="browse.html" aria-current="page">Browse</a></li>
+        <li><a href="index.html#how-it-works">How it works</a></li>
+        <li><a href="index.html#stories">Stories</a></li>
+        <li><a href="index.html#download" class="btn btn-sm">Download app</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero page-hero--browse">
+      <div class="container">
+        <p class="eyebrow">Customer-to-Customer Only</p>
+        <h1>Browse used bikes</h1>
+        <p class="page-hero-lead">Real listings from real owners — no dealers, no brokers. Download the app to message sellers.</p>
+      </div>
+    </section>
+
+    <section class="browse-toolbar">
+      <div class="container browse-toolbar-inner">
+        <label class="search-field">
+          <span class="sr-only">Search bikes</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input type="search" id="search-input" placeholder="Search brand, model, city…" autocomplete="off">
+        </label>
+
+        <div class="filter-row">
+          <div class="filter-chips" role="group" aria-label="Filter by type">
+            <button type="button" class="filter-chip is-active" data-filter="all">All</button>
+            <button type="button" class="filter-chip" data-filter="royal enfield">Royal Enfield</button>
+            <button type="button" class="filter-chip" data-filter="honda">Honda</button>
+            <button type="button" class="filter-chip" data-filter="hero">Hero</button>
+            <button type="button" class="filter-chip" data-filter="tvs">TVS</button>
+            <button type="button" class="filter-chip" data-filter="scooter">Scooter</button>
+          </div>
+
+          <label class="select-field">
+            <span class="sr-only">Sort listings</span>
+            <select id="sort-select" aria-label="Sort listings">
+              <option value="newest">Newest first</option>
+              <option value="price-low">Price: low to high</option>
+              <option value="price-high">Price: high to low</option>
+              <option value="mileage">Lowest mileage</option>
+            </select>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <section class="section browse-section">
+      <div class="container">
+        <p class="browse-count"><span id="listing-count">6</span> bikes available</p>
+
+        <div class="listing-grid" id="listing-grid">
+          <article class="bike-card" data-brand="royal enfield" data-price="100000" data-mileage="10000" data-keywords="royal enfield classic 350 bengaluru">
+            <img src="images/bike-royal-enfield.jpg" alt="Royal Enfield Classic 350" class="bike-card-image" loading="lazy">
+            <div class="bike-card-body">
+              <h2>Used Royal Enfield Classic 350</h2>
+              <div class="bike-card-meta">
+                <span class="price">₹1,00,000</span>
+                <span class="mileage">10,000 KM</span>
+              </div>
+              <p class="bike-card-location">Bengaluru, Karnataka</p>
+              <span class="bike-card-tag">Owner listed</span>
+            </div>
+          </article>
+
+          <article class="bike-card" data-brand="honda" data-price="72000" data-mileage="8500" data-keywords="honda activa 6g scooter mumbai">
+            <img src="images/bike-activa.jpg" alt="Honda Activa 6G" class="bike-card-image" loading="lazy">
+            <div class="bike-card-body">
+              <h2>Honda Activa 6G</h2>
+              <div class="bike-card-meta">
+                <span class="price">₹72,000</span>
+                <span class="mileage">8,500 KM</span>
+              </div>
+              <p class="bike-card-location">Mumbai, Maharashtra</p>
+              <span class="bike-card-tag">Owner listed</span>
+            </div>
+          </article>
+
+          <article class="bike-card" data-brand="hero" data-price="45000" data-mileage="22000" data-keywords="hero splendor plus pune">
+            <img src="images/bike-splendor.jpg" alt="Hero Splendor Plus" class="bike-card-image" loading="lazy">
+            <div class="bike-card-body">
+              <h2>Hero Splendor Plus</h2>
+              <div class="bike-card-meta">
+                <span class="price">₹45,000</span>
+                <span class="mileage">22,000 KM</span>
+              </div>
+              <p class="bike-card-location">Pune, Maharashtra</p>
+              <span class="bike-card-tag">Owner listed</span>
+            </div>
+          </article>
+
+          <article class="bike-card" data-brand="tvs" data-price="95000" data-mileage="12000" data-keywords="tvs apache rtr 160 chennai">
+            <img src="images/bike-apache.jpg" alt="TVS Apache RTR 160" class="bike-card-image" loading="lazy">
+            <div class="bike-card-body">
+              <h2>TVS Apache RTR 160</h2>
+              <div class="bike-card-meta">
+                <span class="price">₹95,000</span>
+                <span class="mileage">12,000 KM</span>
+              </div>
+              <p class="bike-card-location">Chennai, Tamil Nadu</p>
+              <span class="bike-card-tag">Owner listed</span>
+            </div>
+          </article>
+
+          <article class="bike-card" data-brand="royal enfield" data-price="135000" data-mileage="5200" data-keywords="royal enfield hunter 350 hyderabad">
+            <img src="images/bike-hunter.jpg" alt="Royal Enfield Hunter 350" class="bike-card-image" loading="lazy">
+            <div class="bike-card-body">
+              <h2>Royal Enfield Hunter 350</h2>
+              <div class="bike-card-meta">
+                <span class="price">₹1,35,000</span>
+                <span class="mileage">5,200 KM</span>
+              </div>
+              <p class="bike-card-location">Hyderabad, Telangana</p>
+              <span class="bike-card-tag">Owner listed</span>
+            </div>
+          </article>
+
+          <article class="bike-card" data-brand="honda" data-price="38000" data-mileage="35000" data-keywords="honda shine scooter delhi">
+            <img src="images/bike-splendor.jpg" alt="Honda Shine" class="bike-card-image" loading="lazy">
+            <div class="bike-card-body">
+              <h2>Honda Shine</h2>
+              <div class="bike-card-meta">
+                <span class="price">₹38,000</span>
+                <span class="mileage">35,000 KM</span>
+              </div>
+              <p class="bike-card-location">Delhi, NCR</p>
+              <span class="bike-card-tag">Owner listed</span>
+            </div>
+          </article>
+        </div>
+
+        <p class="browse-empty is-hidden" id="browse-empty">No bikes match your search. Try a different filter.</p>
+      </div>
+    </section>
+
+    <section class="app-cta-banner">
+      <div class="container app-cta-inner">
+        <div>
+          <h2>Want to contact a seller?</h2>
+          <p>Download Bikenest to message owners, save favourites, and post your own listing.</p>
+        </div>
+        <div class="app-cta-actions">
+          <a href="index.html#download" class="btn btn-primary">Download the app</a>
+          <a href="#" class="store-badge store-badge--apple" data-store="appStore" aria-label="Download on the App Store">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            <span><small>Download on the</small>App Store</span>
+          </a>
+          <a href="#" class="store-badge store-badge--google" data-store="playStore" aria-label="Get it on Google Play">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.609 1.814L13.792 12 3.61 22.186a1.003 1.003 0 0 1-.601-.918V2.732a1.003 1.003 0 0 1 .6-.918zm4.594 12.593l2.042 2.042-6.378 3.704a1.003 1.003 0 0 1-1.453-.892v-.001l5.789-4.853zm-1.18-1.18L3.61 3.814l5.789 4.853-2.376 2.376zm11.406 5.703l-2.698 1.563-2.42-2.42 2.42-2.42 2.698 1.563a1.003 1.003 0 0 1 0 1.714z"/></svg>
+            <span><small>Get it on</small>Google Play</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo logo--footer">
+          <img src="images/bikenestlogo.jpeg" alt="" class="logo-img">
+        </a>
+        <p>Customer-to-Customer Only.<br>No Dealers. No Brokers.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="browse.html">Browse bikes</a>
+        <a href="index.html#how-it-works">How it works</a>
+        <a href="index.html#download">Download app</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </nav>
+      <div class="footer-contact">
+        <p>Questions? Reach us at</p>
+        <a href="mailto:support@bikenest.in">support@bikenest.in</a>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; <span id="year"></span> BIKENEST TECHNOLOGIES PRIVATE LIMITED. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/browse.js"></script>
+</body>
+</html>
