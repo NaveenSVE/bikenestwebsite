@@ -4,7 +4,7 @@
  */
 const APP_LINKS = {
   appStore: "#",
-  playStore: "#",
+  playStore: "https://play.google.com/store/apps/details?id=com.sveyo.app",
 };
 
 document.querySelectorAll("[data-store]").forEach((el) => {
